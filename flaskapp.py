@@ -44,6 +44,8 @@ def combine_mods():
 
             shutil.rmtree('tempmods/0', ignore_errors=True)
             shutil.rmtree('tempmods/1', ignore_errors=True)
+            shutil.rmtree('tempmods/out', ignore_errors=True)
+            os.makedirs('tempmods/out', exist_ok=True)
             with ZipFile('tempmods/0.zip', 'r') as f:
                 f.extractall(path='tempmods/0')
             with ZipFile('tempmods/1.zip', 'r') as f:
