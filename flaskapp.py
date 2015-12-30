@@ -8,8 +8,6 @@ import random, shutil
 
 app = Flask(__name__)
 app.config.from_pyfile('flaskapp.cfg')
-#app.debug = True
-app.secret_key = b'\xf4Zh=\x92Z_\x84\xb9\xd1\x8b\xe5\xa4\xb8\xa0\xb3D66\xa0,\xf1\xd1\xc3H\xd9\xe3\x13\x0bp\x0b\xd3'
 
 
 @app.route('/')
